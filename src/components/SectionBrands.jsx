@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll';
 import Divider from './Divider';
 
 const ALPHABET_ARRAY = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -26,16 +27,17 @@ function BrandBlock({ title }) {
 }
 
 function SectionBrands() {
-  console.log(ALPHABET_ARRAY.length);
   return (
-    <section className="px-4 py-[60px]">
-      <h2 className="text-[55px]/[120%] tracking-[-2.2px]">Our Brands</h2>
-      <div className="grid grid-cols-1 gap-5">
-        {ALPHABET_ARRAY.map((letter) => (
-          <BrandBlock key={letter} title={letter} />
-        ))}
-      </div>
-    </section>
+    <Element name="brands">
+      <section id="brands" className="px-4 py-[60px]">
+        <h2 className="text-[55px]/[120%] tracking-[-2.2px]">Our Brands</h2>
+        <div className="grid grid-cols-1 gap-5">
+          {ALPHABET_ARRAY.map((letter) => (
+            <BrandBlock key={letter} title={letter} />
+          ))}
+        </div>
+      </section>
+    </Element>
   );
 }
 
