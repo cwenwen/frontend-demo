@@ -1,7 +1,55 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-black: #000000;
+  --color-postItGreen: #daffbd;
+  --color-newsprint: #f3f1ed;
+  --color-paperWhite: #fffcf6;
+  --font-arialRounded: 'arialRounded';
+  --font-fakeReceipt: 'fakeReceipt';
+  --font-ppNeueMontreal400: 'ppNeueMontreal400';
+  --font-ppNeueMontreal500: 'ppNeueMontreal500';
+}
+
+@font-face {
+  font-family: 'arialRounded';
+  src: url('/src/assets/fonts/Arial-Rounded-MT-Bold.woff2') format('woff2'),
+    url('/src/assets/fonts/Arial-Rounded-MT-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fakeReceipt';
+  src: url('/src/assets/fonts/fake-receipt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ppNeueMontreal400';
+  src: url('/src/assets/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/PPNeueMontreal-Regular.woff') format('woff'),
+    url('/src/assets/fonts/PPNeueMontreal-Regular.ttf') format('truetype'),
+    url('/src/assets/fonts/PPNeueMontreal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ppNeueMontreal500';
+  src: url('/src/assets/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+    url('/src/assets/fonts/PPNeueMontreal-Medium.woff') format('woff'),
+    url('/src/assets/fonts/PPNeueMontreal-Medium.ttf') format('truetype'),
+    url('/src/assets/fonts/PPNeueMontreal-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
-  background-color: #daffbd;
+  background-color: var(--color-postItGreen);
+  color: var(--color-black);
+  font-family: var(--font-arialRounded);
 }
 
 body {
