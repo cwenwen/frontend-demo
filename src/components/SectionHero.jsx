@@ -2,7 +2,7 @@ import LogoSvg from '../assets/locavore-logo.svg?react';
 
 function SectionHero() {
   return (
-    <section className='flex justify-between font-normal text-center tracking-[-0.6px] text-xl/[130%] items-center py-[70px] px-[100px] flex-col h-screen uppercase'>
+    <section className="flex h-screen flex-col items-center justify-between px-[100px] py-[70px] text-center text-xl/[130%] font-normal tracking-[-0.6px] uppercase">
       <div>
         434 6th ST
         <br />
@@ -10,7 +10,7 @@ function SectionHero() {
         <br />
         VILLAGE
       </div>
-      <LogoSvg className='w-[352px]' />
+      <LogoSvg className="w-[352px]" />
       <div>
         OPEN DAILY
         <br />

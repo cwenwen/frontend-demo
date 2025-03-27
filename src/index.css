@@ -13,7 +13,8 @@
 
 @font-face {
   font-family: 'arialRounded';
-  src: url('/src/assets/fonts/Arial-Rounded-MT-Bold.woff2') format('woff2'),
+  src:
+    url('/src/assets/fonts/Arial-Rounded-MT-Bold.woff2') format('woff2'),
     url('/src/assets/fonts/Arial-Rounded-MT-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -28,7 +29,8 @@
 
 @font-face {
   font-family: 'ppNeueMontreal400';
-  src: url('/src/assets/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+  src:
+    url('/src/assets/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
     url('/src/assets/fonts/PPNeueMontreal-Regular.woff') format('woff'),
     url('/src/assets/fonts/PPNeueMontreal-Regular.ttf') format('truetype'),
     url('/src/assets/fonts/PPNeueMontreal-Regular.otf') format('opentype');
@@ -38,7 +40,8 @@
 
 @font-face {
   font-family: 'ppNeueMontreal500';
-  src: url('/src/assets/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+  src:
+    url('/src/assets/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
     url('/src/assets/fonts/PPNeueMontreal-Medium.woff') format('woff'),
     url('/src/assets/fonts/PPNeueMontreal-Medium.ttf') format('truetype'),
     url('/src/assets/fonts/PPNeueMontreal-Medium.otf') format('opentype');

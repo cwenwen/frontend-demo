@@ -10,11 +10,11 @@ function BrandBlock({ title }) {
 
   return (
     <>
-      <div className='font-ppNeueMontreal500 mt-5 mb-10'>
-        <h4 className='text-[17px]/[150%] tracking-[0.17px]'>{title}</h4>
-        <div className='grid grid-cols-2 gap-2 mt-6'>
+      <div className="font-ppNeueMontreal500 mt-5 mb-10">
+        <h4 className="text-[17px]/[150%] tracking-[0.17px]">{title}</h4>
+        <div className="mt-6 grid grid-cols-2 gap-2">
           {Array.from({ length: numberOfBrands }, (_, index) => (
-            <p key={index} index={index} className='w-[200px]'>
+            <p key={index} index={index} className="w-[200px]">
               Lorem Ipsum
             </p>
           ))}
@@ -28,9 +28,9 @@ function BrandBlock({ title }) {
 function SectionBrands() {
   console.log(ALPHABET_ARRAY.length);
   return (
-    <section className='py-[60px] px-4'>
-      <h2 className='text-[55px]/[120%] tracking-[-2.2px]'>Our Brands</h2>
-      <div className='grid grid-cols-1 gap-5'>
+    <section className="px-4 py-[60px]">
+      <h2 className="text-[55px]/[120%] tracking-[-2.2px]">Our Brands</h2>
+      <div className="grid grid-cols-1 gap-5">
         {ALPHABET_ARRAY.map((letter) => (
           <BrandBlock key={letter} title={letter} />
         ))}
