@@ -14,9 +14,9 @@
 
 After the first **5 commits**, the following features were completed:
 
-✅ **Technology stack chosen**: React + Vite (lighter than Next.js) + Tailwind CSS.  
-✅ **Mobile layout implemented**.  
-✅ **Navigation between sections**.
+✅ Technology stack chosen: React + Vite (lighter than Next.js) + Tailwind CSS.  
+✅ Mobile layout implemented.  
+✅ Navigation between sections.
 
 <!-- prettier-ignore -->
 |Hero Section|Sections|Form Section|Navigation|
@@ -26,7 +26,7 @@ After the first **5 commits**, the following features were completed:
 ### Design Details
 
 - **Sticky navigation bar**:
-  - When hovering over a nav item or when the corresponding section is in view, the nav item gets a **dashed underline with a smooth transition effect**.
+  - When hovering over a nav item or when the corresponding section is in view, the nav item gets a dashed underline with a smooth transition effect.
 - **Typography & colors**:
   - Matched to the design specifications as closely as possible.
 - **Meta tags, OG tags, and favicon**:
@@ -35,18 +35,18 @@ After the first **5 commits**, the following features were completed:
 ### Development Details
 
 - **ESLint & Prettier**:
-  - Configured with the Tailwind CSS plugin for **automatic class sorting**.
+  - Configured with the Tailwind CSS plugin for automatic class sorting.
 - **Deployment**:
-  - **Hosted on GitHub Pages** to showcase the result.
+  - Hosted on GitHub Pages to showcase the result.
 
 ### Challenges Faced
 
 - **Navigation bar layout issue**:
-  - The rightmost nav item’s **right margin disappeared** unexpectedly.
+  - The rightmost nav item’s right margin disappeared unexpectedly.
   - Temporarily marked with a `FIXME:` comment to focus on overall layout first.
 - **Dashed underline activation for nav items**:
   - Set `threshold: 0.6`, so the underline appears once 60% of the section is visible in the viewport.
-  - **Issue with the "Our Brands" section** – Since this section is very long, it never fully triggers the condition, requiring further adjustments.
+  - Issue with the “Our Brands” section – Since this section is very long, it never fully triggers the condition, requiring further adjustments.
 - **Customizing the file upload input**:
   - Currently using the default file input, which needs to be customized to match the design.
   - Use a visually hidden `<input type="file">` and replace it with a custom-styled button.
@@ -55,6 +55,6 @@ After the first **5 commits**, the following features were completed:
 
 ## Next Steps
 
-🔹 **Desktop layout implementation** using Tailwind’s `lg:flex-row`, etc.  
-🔹 **Brochure flip effect** – Planning to explore GSAP and Framer Motion, since I haven’t used them before.  
-🔹 **Refining visual details** – Fix layout issues, enhance interactions (e.g., hover effects on buttons).
+🔹 Desktop layout implementation using Tailwind’s `lg:flex-row`, etc.  
+🔹 Brochure flip effect – Planning to explore GSAP and Framer Motion, since I haven’t used them before.  
+🔹 Refining visual details – Fix layout issues, enhance interactions (e.g., hover effects on buttons).
