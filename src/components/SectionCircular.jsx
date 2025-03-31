@@ -1,5 +1,6 @@
 import { Element } from 'react-scroll';
 import Button from './Button';
+import circularImg from '../assets/circular.png';
 import CircularIconSvg from '../assets/circular-icon.svg?react';
 
 function SectionCircular() {
@@ -20,12 +21,12 @@ function SectionCircular() {
             <div className="h-[432px] w-[280px] transform-[rotate(-7.3deg)] transform-3d lg:h-[718px] lg:w-[448px]">
               <div className="h-full w-full hover:transform-[rotateY(180deg)] active:transform-[rotateY(180deg)]">
                 <img
-                  src="src/assets/circular.png"
+                  src={circularImg}
                   alt="Front side"
                   className="absolute h-full w-full border border-dashed backface-hidden"
                 />
                 <img
-                  src="src/assets/circular.png"
+                  src={circularImg}
                   alt="Back side"
                   className="absolute h-full w-full transform-[rotateY(180deg)] border border-dashed backface-hidden"
                 />
