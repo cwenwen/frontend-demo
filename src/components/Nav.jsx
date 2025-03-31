@@ -51,14 +51,14 @@ function Nav() {
         {NAV_ITEMS.map(({ id, title }) => (
           <li key={id} className="first:pl-4 last:pr-4">
             <Link
-              className={`cursor-pointer border-dashed transition-all duration-500 hover:border-b hover:border-black ${
+              className={`cursor-pointer border-dashed hover:border-b hover:border-black ${
                 active === id
                   ? 'border-b border-black'
                   : 'border-b border-transparent'
               }`}
               to={id}
               smooth={true}
-              duration={500}
+              duration={300}
             >
               {title}
             </Link>

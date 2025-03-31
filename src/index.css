@@ -61,3 +61,9 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+div,
+a,
+button {
+  transition: all 0.3s ease-in-out;
+}
