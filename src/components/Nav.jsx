@@ -47,18 +47,19 @@ function Nav() {
 
   return (
     <nav className="font-fakeReceipt bg-postItGreen sticky bottom-0 h-[53px] overflow-scroll border-y border-dashed border-black text-xs text-nowrap uppercase">
-      <ul className="mx-[30px] flex h-full w-full shrink-0 items-center justify-between gap-20">
-        {/* FIXME: missed margin right */}
+      <ul className="border-box flex h-full w-full items-center justify-between gap-20 px-3.5">
         {NAV_ITEMS.map(({ id, title }) => (
-          <li
-            key={id}
-            className={`cursor-pointer border-dashed transition-all duration-500 hover:border-b hover:border-black ${
-              active === id
-                ? 'border-b border-black'
-                : 'border-b border-transparent'
-            }`}
-          >
-            <Link to={id} smooth={true} duration={500}>
+          <li key={id} className="first:pl-4 last:pr-4">
+            <Link
+              className={`cursor-pointer border-dashed transition-all duration-500 hover:border-b hover:border-black ${
+                active === id
+                  ? 'border-b border-black'
+                  : 'border-b border-transparent'
+              }`}
+              to={id}
+              smooth={true}
+              duration={500}
+            >
               {title}
             </Link>
           </li>
